@@ -1,0 +1,50 @@
+{
+  "info": {
+    "name": "TestFlight",
+    "_postman_id": "064a3dee-ebda-0081-11f5-a785e473f062",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "1-GetLocations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "url": {
+          "raw": "https://respina24.ir/flight/Locations1",
+          "protocol": "https",
+          "host": ["respina24", "ir"],
+          "path": ["flight", "Locations1"]
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "name": "2-Availability",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"from\":\"THR\",\"to\":\"MHD\",\"departureDate\":\"2022-06-30\",\"currency\":\"IRR\",\"type\":\"fast\"}"
+        },
+        "url": {
+          "raw": "https://respina24.ir/flight/Availability",
+          "protocol": "https",
+          "host": ["respina24", "ir"],
+          "path": ["flight", "Availability"]
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}
