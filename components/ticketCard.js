@@ -14,8 +14,8 @@ const TicketCard = ({ ticketInfo }) => {
           <p>اطلاعات پرواز</p>
           <hr />
           <div className="col-md-4">
-            <p>مبدا : " {fromCityName} "</p>
-            <p>مقصد :" {toCityName} "</p>
+            <p>مبدا : {fromCityName} </p>
+            <p>مقصد : {toCityName} </p>
           </div>
           <div className="col-md-4">
             <p>تاریخ پرواز : {ticketInfo.date}</p>
