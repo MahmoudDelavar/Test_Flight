@@ -45,7 +45,6 @@ const FlightSearch = () => {
       departureDate,
       returnDate,
     };
-    console.log("searchInfo", searchInfo);
 
     location = `/flight/${cityFrom}/${cityTo}/${departureDate}/${returnDate}`;
   };
